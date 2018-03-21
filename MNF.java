@@ -9,24 +9,6 @@ public class MNF {
 	static double z1;
 	static double z2;
 /////////////////////////////////////////////////////////////////////////////
-	public static void redo() {
-		System.out.println("\n\nYou want to use it again? (y/n): ");
-		Scanner redoyn = new Scanner(System.In);
-		String yn = redoyn.next();
-		if(yn.equals("y")){
-			main();
-		}
-		else if(yn.equals("n")){
-			Thread.sleep(1000);
-			System.exit(0);
-		}
-		else {
-			System.out.println("\n\nUnknown command. Shutting down!");
-			Thread.sleep(3000);
-			System.exit(0);
-		}
-	}
-/////////////////////////////////////////////////////////////////////////////
 	public static void zMNF() {
 	
 	System.out.println("\n\nz1 -> " + z1);
