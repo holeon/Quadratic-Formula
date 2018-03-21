@@ -51,7 +51,6 @@ public class MNF {
 	}
 	
 	System.out.println("\nDone!");
-	redo();
 	}
 ////////////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
@@ -79,7 +78,6 @@ public class MNF {
 		//System.out.println("\nUnter WZL -> " + WZL);
 		if(WZL<0) {
 			System.out.println("No x!");			//no x, because of mathematical principes :D
-			redo();
 		}
 		else {
 			WZL = Math.pow(WZL, 0.5);
@@ -105,7 +103,7 @@ public class MNF {
 			zMNF();
 		}
 		System.out.println("Done!");	
-		redo();
+
 	}
 	
 
