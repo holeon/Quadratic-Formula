@@ -50,7 +50,7 @@ public class MNF {
 			
 	}
 	
-	System.out.println("\nDone!");
+	//System.out.println("\nDone!");
 	}
 ////////////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
