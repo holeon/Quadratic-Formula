@@ -17,13 +17,13 @@ public class MNF {
 	int z1i = 0;
 	int z2i = 0;
 	
-	if(z1<0) {											//wegen i zahlen...
+	if(z1<0) {								//because of complex neumbers
 		z1 = z1*(-1);
 		z1i = 1;
 	}
 	else {}
 	
-	if(z2<0) {																		//wegen i zahlen...
+	if(z2<0) {									//becuase of complex numbers
 		z2 = z2*(-1);
 		z2i = 1;			
 	}
@@ -37,10 +37,10 @@ public class MNF {
 		System.out.println("\nx3/4 = " + x34 + "i");
 	}
 	else if(z1i==1) {
-		System.out.println("\n\nx1/2 = " + x12 + "i");									//wegen i zahlen...
+		System.out.println("\n\nx1/2 = " + x12 + "i");				//because of the complex numbers
 		System.out.println("\nx3/4 = -/+ " + x34);
 	}
-	else if(z2i==1) {																						//wegen i zahlen...
+	else if(z2i==1) {				   				//because of complex numbers
 		System.out.println("\n\nx1/2 = " + x12);
 		System.out.println("\nx3/4 = " + x34 + "i");
 	}
@@ -79,7 +79,7 @@ public class MNF {
 		double WZL = (Math.pow(b, 2.0) - 4 * a * c);
 		System.out.println("\nUnter WZL -> " + WZL);
 		if(WZL<0) {
-			System.out.println("No x!");										//no x....
+			System.out.println("No x!");			//no x, because of mathematical principes :D
 			System.exit(1);
 		}
 		else {
