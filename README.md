@@ -1,2 +1,3 @@
 # Quadratic-Formula
-Java program for quadratic formula
+Java program for quadratic formula.
+Not that professional :D
