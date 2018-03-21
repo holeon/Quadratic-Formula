@@ -9,24 +9,6 @@ public class MNF {
 	static double z1;
 	static double z2;
 /////////////////////////////////////////////////////////////////////////////
-	public static void redo() {
-		System.out.println("\n\nYou want to use it again? (y/n): ");
-		Scanner redoyn = new Scanner(System.In);
-		String yn = redoyn.next();
-		if(yn.equals("y")){
-			main();
-		}
-		else if(yn.equals("n")){
-			Thread.sleep(1000);
-			System.exit(0);
-		}
-		else {
-			System.out.println("\n\nUnknown command. Shutting down!");
-			Thread.sleep(3000);
-			System.exit(0);
-		}
-	}
-/////////////////////////////////////////////////////////////////////////////
 	public static void zMNF() {
 	
 	System.out.println("\n\nz1 -> " + z1);
@@ -69,7 +51,6 @@ public class MNF {
 	}
 	
 	System.out.println("\nDone!");
-	redo();
 	}
 ////////////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
@@ -97,7 +78,6 @@ public class MNF {
 		//System.out.println("\nUnter WZL -> " + WZL);
 		if(WZL<0) {
 			System.out.println("No x!");			//no x, because of mathematical principes :D
-			redo();
 		}
 		else {
 			WZL = Math.pow(WZL, 0.5);
@@ -123,7 +103,7 @@ public class MNF {
 			zMNF();
 		}
 		System.out.println("Done!");	
-		redo();
+
 	}
 	
 
