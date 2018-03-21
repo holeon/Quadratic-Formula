@@ -9,6 +9,24 @@ public class MNF {
 	static double z1;
 	static double z2;
 /////////////////////////////////////////////////////////////////////////////
+	public static void redo() {
+		System.out.println("\n\nYou want to use it again? (y/n): ");
+		Scanner redoyn = new Scanner(System.In);
+		String yn = redoyn.next();
+		if(yn.equals("y")){
+			main();
+		}
+		else if(yn.equals("n")){
+			Thread.sleep(1000);
+			System.exit(0);
+		}
+		else {
+			System.out.println("\n\nUnknown command. Shutting down!");
+			Thread.sleep(3000);
+			System.exit(0);
+		}
+	}
+/////////////////////////////////////////////////////////////////////////////
 	public static void zMNF() {
 	
 	System.out.println("\n\nz1 -> " + z1);
@@ -34,23 +52,24 @@ public class MNF {
 	double x34 = Math.pow(z2, 1/z);
 	if(z1i==1 && z2i==1) {
 		System.out.println("\n\nx1/2 = " + x12 + "i");	
-		System.out.println("\nx3/4 = " + x34 + "i");
+		System.out.println("x3/4 = " + x34 + "i");
 	}
 	else if(z1i==1) {
 		System.out.println("\n\nx1/2 = " + x12 + "i");				//because of the complex numbers
-		System.out.println("\nx3/4 = -/+ " + x34);
+		System.out.println("x3/4 = -/+ " + x34);
 	}
 	else if(z2i==1) {				   				//because of complex numbers
 		System.out.println("\n\nx1/2 = " + x12);
-		System.out.println("\nx3/4 = " + x34 + "i");
+		System.out.println("x3/4 = " + x34 + "i");
 	}
 	else {
 		System.out.println("\n\nx1/2 = -/+ " + x12);
-		System.out.println("\nx3/4 = -/+ " + x34);
+		System.out.println("x3/4 = -/+ " + x34);
 			
 	}
 	
 	System.out.println("\nDone!");
+	redo();
 	}
 ////////////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
@@ -78,7 +97,7 @@ public class MNF {
 		//System.out.println("\nUnter WZL -> " + WZL);
 		if(WZL<0) {
 			System.out.println("No x!");			//no x, because of mathematical principes :D
-			System.exit(1);
+			redo();
 		}
 		else {
 			WZL = Math.pow(WZL, 0.5);
@@ -104,6 +123,7 @@ public class MNF {
 			zMNF();
 		}
 		System.out.println("Done!");	
+		redo();
 	}
 	
 
