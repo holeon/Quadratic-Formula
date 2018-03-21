@@ -68,16 +68,14 @@ public class MNF {
 		System.out.println("Factor of 'Z'?\n (e.g.: z = x² -> 2, no z -> 1)\n  :");
 		z = abcz.nextDouble();
 		abcz.close();
-		
-		
-		System.out.println("a -> " + a);
-		System.out.println("b -> " + b);
-		System.out.println("c -> " + c);
-		System.out.println("z -> " + z);
+		//System.out.println("\na -> " + a);
+		//System.out.println("b -> " + b);
+		//System.out.println("c -> " + c);
+		//System.out.println("z -> " + z);
 		
 ////////	
 		double WZL = (Math.pow(b, 2.0) - 4 * a * c);
-		System.out.println("\nUnter WZL -> " + WZL);
+		//System.out.println("\nUnter WZL -> " + WZL);
 		if(WZL<0) {
 			System.out.println("No x!");			//no x, because of mathematical principes :D
 			System.exit(1);
@@ -86,16 +84,15 @@ public class MNF {
 			WZL = Math.pow(WZL, 0.5);
 		}
 		
-		System.out.println("\nNach WZL -> " + WZL);
+		//System.out.println("\nNach WZL -> " + WZL);
 		
 		double Oben1 = ((-b) - WZL);
 		double Oben2 = ((-b) + WZL);
 		double Unten = (2*a);
 ////////		
-		System.out.println("\nOben1 -> " + Oben1);
-		System.out.println("Oben2 -> " + Oben2);
-		System.out.println("Unten -> " + Unten);
-		
+		//System.out.println("\nOben1 -> " + Oben1);
+		//System.out.println("Oben2 -> " + Oben2);
+		//System.out.println("Unten -> " + Unten);
 		z1 = Oben1/Unten;
 		z2 = Oben2/Unten;
 		
